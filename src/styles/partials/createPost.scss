@@ -1,0 +1,42 @@
+form {
+  &.create {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      border: 2px solid var(--text-color);
+      &:hover {
+        background-color: var(--text-color);
+        color: var(--bg-color);
+      }
+      &::placeholder {
+        color: var(--inactive-color1);
+        text-transform: capitalize;
+      }
+    }
+    button {
+      text-transform: capitalize;
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: var(--bg-color);
+      border: 2px solid var(--text-color);
+      color: var(--text-color);
+      &:hover {
+        background-color: var(--text-color);
+        color: var(--bg-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.postPage {
+  .postTop {
+    text-align: center;
+
+    .title {
+      font-size: var(--size-32);
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .author {
+      font-size: var(--size-12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      .name {
+        color: var(--inactive-color1);
+        text-transform: capitalize;
+        text-transform: capitalize;
+        font-weight: 900;
+      }
+      .date {
+        color: var(--inactive-color2);
+      }
+    }
+
+    .edit {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        padding: 5px;
+        border: 2px solid var(--text-color);
+        border-radius: 6px;
+        cursor: pointer;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        width: fit-content;
+        &:hover {
+          background-color: var(--text-color);
+          color: var(--bg-color);
+        }
+      }
+    }
+    .image {
+      width: 100%;
+      img {
+        width: 100%;
+        object-fit: contain;
+        aspect-ratio: 11/6;
+      }
+    }
+  }
+
+  .detail {
+    .content {
+      line-height: var(--size-24);
+      letter-spacing: 1px;
+      text-align: justify;
+      ul,
+      ol {
+        padding: 0 20px;
+      }
+      a {
+        text-decoration: underline;
+        font-weight: 900;
+        color: var(--blue);
+      }
+    }
+  }
+}
