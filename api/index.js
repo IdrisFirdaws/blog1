@@ -28,7 +28,10 @@ const upload = multer({ dest: "uploads/" });
 mongoose
   .connect(
     "mongodb+srv://blog-one:YBN9GDC2b5SLSuEA@cluster0.yk3jl8m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-    { useNewUrlParser: true, useUnifiedTopology: true }
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
   )
   .then(() => {
     console.log("Connected to MongoDB");

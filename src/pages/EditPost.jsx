@@ -24,6 +24,7 @@ export default function EditPost() {
 
     const updatePost = async (e) => {
         e.preventDefault();
+        console.log(process.env.REACT_APP_API_URL);
 
         const data = new FormData();
         data.set('title', title);
