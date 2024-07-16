@@ -12,7 +12,6 @@ import RootLayout from "./layout/RootLayout";
 import AdminLayout from "./layout/AdminLayout"; // Import AdminLayout
 
 // Pages
-import Homepage from "./pages/home/AdminHomepage";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
@@ -39,7 +38,6 @@ const router = createBrowserRouter(
         <Route index element={<AdminHomepage />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
-        {/* <Route path="post/:id" element={<PostPage />} /> */}
         <Route path="create" element={<CreatePost />} />
         <Route path="*" element={<NotFound />} />
       </Route>
